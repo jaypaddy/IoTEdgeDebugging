@@ -186,7 +186,7 @@
                 "RuntimeLogLevel=Information",
                 "LOCAL_STORAGE_ACCOUNT_KEY=EHlpuL5I/EjkSJxO7VnB6o4tGR55Ca3BUjmt7gHUF2MjoWtwehQlfyWRj04LjONnem/SNQNfl0Pv829UMwlRxA==",
                 "IOTEDGE_WORKLOADURI=unix:///var/run/iotedge/workload.sock",
-                "IOTEDGE_DEVICEID=7NEXTUbuntu",
+                "IOTEDGE_DEVICEID=7NUbuntu",
                 "IOTEDGE_MODULEID=BlobStoreModule",
                 "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
                 "ASPNETCORE_URLS=http://+:80",
