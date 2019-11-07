@@ -1,0 +1,272 @@
+[
+    {
+        "Id": "7b73224ab6debda530d40364ef6adadeb40d5377e3ba58adb96804fa8abe3043",
+        "Created": "2019-11-07T11:35:01.857917373Z",
+        "Path": "./docker-entrypoint.sh",
+        "Args": [
+            "dotnet",
+            "Microsoft.Azure.Devices.BlobStorage.PlatformBlob.dll"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 49850,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2019-11-07T11:57:33.213837141Z",
+            "FinishedAt": "2019-11-07T11:51:06.099357025Z"
+        },
+        "Image": "sha256:e15db6ddf55c78325bb47c38fce2cf7c0eca5692a8ab7aa57a0531f84f57c6eb",
+        "ResolvConfPath": "/var/lib/docker/containers/7b73224ab6debda530d40364ef6adadeb40d5377e3ba58adb96804fa8abe3043/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/7b73224ab6debda530d40364ef6adadeb40d5377e3ba58adb96804fa8abe3043/hostname",
+        "HostsPath": "/var/lib/docker/containers/7b73224ab6debda530d40364ef6adadeb40d5377e3ba58adb96804fa8abe3043/hosts",
+        "LogPath": "/var/lib/docker/containers/7b73224ab6debda530d40364ef6adadeb40d5377e3ba58adb96804fa8abe3043/7b73224ab6debda530d40364ef6adadeb40d5377e3ba58adb96804fa8abe3043-json.log",
+        "Name": "/BlobStoreModule",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": [
+                "my-volume:/blobroot",
+                "/var/run/iotedge/workload.sock:/var/run/iotedge/workload.sock"
+            ],
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {
+                "11002/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "11002"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Dns": null,
+            "DnsOptions": null,
+            "DnsSearch": null,
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "shareable",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": null,
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": null,
+            "DeviceCgroupRules": null,
+            "DiskQuota": 0,
+            "KernelMemory": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": 0,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/1a34de66e9fc529e43936aa02f0bde4b9fec999c57073f63801fa04ca93c2f4c-init/diff:/var/lib/docker/overlay2/c3708458828a03c66cb806699fe3ad4b2ac5588d797ee2e6f7681e94d2c073ae/diff:/var/lib/docker/overlay2/7d603378ebe506e48966c7cb3644e57a1f80cdf463aa2ff6c4d015567d7f9826/diff:/var/lib/docker/overlay2/1e10386d65471db4bce4d25a8eafafb2a81fd90508d9b4f0e94b849ed634e151/diff:/var/lib/docker/overlay2/b67cab8a25639238faeaae9a092003d2ad71cec60106c70f9e149adbe5e32916/diff:/var/lib/docker/overlay2/801124aef9fa21ac45f2d4362fcb75cddad8f331fe9dba2ce2150ca43c603d05/diff:/var/lib/docker/overlay2/f3bfd89e570f85714f2d6c06645a80ed3b4d454a86186003c43b45cb7fc74d66/diff:/var/lib/docker/overlay2/de730b56fba19d14cf723460a005de2b51d29992938ff41394867d5fd27eeb75/diff:/var/lib/docker/overlay2/61ec55c4a4d1f08894ff43fa045388a98e8d6153d1de68ee9a3ccf3af3cb7e16/diff:/var/lib/docker/overlay2/842114be72f5fbe738851eafa5fa55944c2fff1f8b5631c131b2ef5e4dc56ec6/diff:/var/lib/docker/overlay2/69a49688b9ffb7c639b5adfdc6e57b044746fbc57c51bb407779e83db2445a3a/diff",
+                "MergedDir": "/var/lib/docker/overlay2/1a34de66e9fc529e43936aa02f0bde4b9fec999c57073f63801fa04ca93c2f4c/merged",
+                "UpperDir": "/var/lib/docker/overlay2/1a34de66e9fc529e43936aa02f0bde4b9fec999c57073f63801fa04ca93c2f4c/diff",
+                "WorkDir": "/var/lib/docker/overlay2/1a34de66e9fc529e43936aa02f0bde4b9fec999c57073f63801fa04ca93c2f4c/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "my-volume",
+                "Source": "/var/lib/docker/volumes/my-volume/_data",
+                "Destination": "/blobroot",
+                "Driver": "local",
+                "Mode": "z",
+                "RW": true,
+                "Propagation": ""
+            },
+            {
+                "Type": "bind",
+                "Source": "/var/run/iotedge/workload.sock",
+                "Destination": "/var/run/iotedge/workload.sock",
+                "Mode": "",
+                "RW": true,
+                "Propagation": "rprivate"
+            }
+        ],
+        "Config": {
+            "Hostname": "7b73224ab6de",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "11002/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "IOTEDGE_IOTHUBHOSTNAME=mythicalhub.azure-devices.net",
+                "IOTEDGE_GATEWAYHOSTNAME=7next",
+                "IOTEDGE_APIVERSION=2019-01-30",
+                "IOTEDGE_AUTHSCHEME=sasToken",
+                "LOCAL_STORAGE_ACCOUNT_NAME=localstorageacct",
+                "IOTEDGE_MODULEGENERATIONID=637087219268683816",
+                "RuntimeLogLevel=Information",
+                "LOCAL_STORAGE_ACCOUNT_KEY=EHlpuL5I/EjkSJxO7VnB6o4tGR55Ca3BUjmt7gHUF2MjoWtwehQlfyWRj04LjONnem/SNQNfl0Pv829UMwlRxA==",
+                "IOTEDGE_WORKLOADURI=unix:///var/run/iotedge/workload.sock",
+                "IOTEDGE_DEVICEID=7NEXTUbuntu",
+                "IOTEDGE_MODULEID=BlobStoreModule",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "ASPNETCORE_URLS=http://+:80",
+                "DOTNET_RUNNING_IN_CONTAINER=true",
+                "DOTNET_SYSTEM_GLOBALIZATION_INVARIANT=true",
+                "DOTNET_VERSION=2.2.6",
+                "HOME=/var/lib/azure-blob-storage",
+                "ROOTPATH=/blobroot"
+            ],
+            "Cmd": [
+                "dotnet",
+                "Microsoft.Azure.Devices.BlobStorage.PlatformBlob.dll"
+            ],
+            "ArgsEscaped": true,
+            "Image": "mcr.microsoft.com/azure-blob-storage:latest",
+            "Volumes": {
+                "/blobroot": {}
+            },
+            "WorkingDir": "/azure-blob-storage",
+            "Entrypoint": [
+                "./docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {
+                "com.visualstudio.microsoft.image.build.buildnumber": "20190806.11-master",
+                "com.visualstudio.microsoft.image.build.builduri": "vstfs:///Build/Build/17472604",
+                "com.visualstudio.microsoft.image.build.definitionname": "linux-amd64 build, unit test, optionally publish (YAML)",
+                "com.visualstudio.microsoft.image.build.repository.name": "AzureBlobStorage",
+                "com.visualstudio.microsoft.image.build.repository.uri": "https://microsoft.visualstudio.com/AzureBlobStorage/_git/AzureBlobStorage",
+                "com.visualstudio.microsoft.image.build.sourcebranchname": "master",
+                "com.visualstudio.microsoft.image.build.sourceversion": "01c202403c80740101677b3e316837374bbf152f",
+                "com.visualstudio.microsoft.image.system.teamfoundationcollectionuri": "https://microsoft.visualstudio.com/",
+                "com.visualstudio.microsoft.image.system.teamproject": "AzureBlobStorage",
+                "net.azure-devices.edge.owner": "Microsoft.Azure.Devices.Edge.Agent"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "ea81c8d95be9f376e6d13b786d8630a0c5602ae71824a1b4e7a8f922ddd38123",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {
+                "11002/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "11002"
+                    }
+                ]
+            },
+            "SandboxKey": "/var/run/docker/netns/ea81c8d95be9",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "azure-iot-edge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": [
+                        "7b73224ab6de"
+                    ],
+                    "NetworkID": "2d0be604d2eedc577d786c8caa139e37f68470750632896d795285dce4374fd7",
+                    "EndpointID": "abec52ea6ae07e143a8d9f3c8d53740029d23e9a07ee273f897a5aaa113c8f55",
+                    "Gateway": "172.18.0.1",
+                    "IPAddress": "172.18.0.3",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "02:42:ac:12:00:03",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
